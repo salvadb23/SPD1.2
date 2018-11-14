@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container-a"></div>
+		<div class="container-b"></div>
+	</div>
+</body>
+<style type="text/css">
+	.wrapper{
+		display: grid;
+		grid-template-columns: 2fr 6fr;
+		grid-template-areas: "a b";
+		height: 100vh;
+		width: 100vw;
+	}
+	.container-a {
+		grid-area: a;
+	}
+	.container-b {
+		grid-area: b;
+	}
+</style>
+</html>

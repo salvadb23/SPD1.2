@@ -3,14 +3,26 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
-		<div class="container-a"></div>
+		<div class="container-a">
+			<img class="profile" src="user.jpg">
+			<h2>Mario</h2>
+			<input type="text" name="friends" placeholder="add friends">
+			<h3>Friends</h3>
+		</div>
 		<div class="container-b"></div>
 	</div>
 </body>
 <style type="text/css">
+
+	body {
+		font-family: Open Sans
+	}
+
 	.wrapper{
 		display: grid;
 		grid-template-columns: 2fr 6fr;
@@ -20,9 +32,18 @@
 	}
 	.container-a {
 		grid-area: a;
+		display: grid;
+		flex-direction: column;
+		text-align: center;
 	}
 	.container-b {
 		grid-area: b;
+	}
+	.profile {
+		width: 130px;
+		height: 130px;
+		margin:auto;
+		border-radius: 50%;
 	}
 </style>
 </html>

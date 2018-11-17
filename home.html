@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -14,13 +15,18 @@
 	</div>
 </body>
 <style type="text/css">
+	@font-face {
+    font-family: Lovelo;
+    src: url("./lovelobold.otf");
+	}
+
 	body {
 		width:100%;
 		height: 100%;
-		font-family: Open Sans;
+		font-family: Source Sans Pro;
 		background-image: url("blurbackground.jpg");
 		background-size: cover;
-		letter-spacing: 3px;
+		letter-spacing: 2px;
 	}
 	.container {
 		width: 100vw;
@@ -33,30 +39,37 @@
 
 	}
 	h1 {
-		font-family: Work Sans;
-		font-size: 90px;
+		font-family: Lovelo;
+		font-size: 130px;
 		font-weight: 700;
 		color: black;
 		margin-bottom: 10px;
 	}
 	h2 {
-		font-weight: 600;
+		font-size: 40px;
+		font-weight: 400;
 		margin-top: 5px;
 		padding-bottom: 20px;
 		color: black;
 	}
 	input {
 
-		width: 470px;
+		width: 620px;
 		border-radius: 30px;
 		border: none;
-		height: 40px;
+		height: 50px;
 		text-align: center;
 	}
 
 	input:focus {
 		outline: none;
+		color: white;
 	}
+	input:focus::-webkit-input-placeholder
+	{
+    color: white;
+    }
+
 	
 </style>
 </html>

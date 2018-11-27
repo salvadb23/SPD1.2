@@ -16,7 +16,33 @@
 			<input type="text" name="friends" placeholder="add friends">
 			<h3>Friends</h3>
 		</div>
-		<div class="container-b"></div>
+		<div class="container-b">
+			<div class="game-wrapper">
+				<div class="game">
+					<img class="cover" src="cover.jpg">
+				</div>
+				<div class="game">
+					<img class="cover" src="cover.jpg">
+				</div>
+				<div class="game">
+					<img class="cover" src="cover.jpg">
+				</div>
+				<div class="game">
+					<img class="cover" src="cover.jpg">
+				</div>
+				<div class="game">
+					<img class="cover" src="cover.jpg">
+				</div>
+				<div class="game">
+					<img class="cover" src="cover.jpg">
+				</div>
+
+
+
+
+
+			</div>
+		</div>
 	</div>
 </body>
 <style type="text/css">
@@ -31,6 +57,28 @@
     font-family: Lovelo;
     src: url("./lovelo.otf");
 	}
+
+	.cover {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.game-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 90%;
+		margin: auto;
+		height: 90%;
+	}
+
+	.game {
+		padding: 50px;
+		height: 350px;
+		width: 260px;
+		background-color: blue;
+	}
+
 	.wrapper{
 		display: grid;
 		grid-template-columns: 2fr 6fr;

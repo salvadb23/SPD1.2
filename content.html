@@ -12,30 +12,49 @@
 		<div class="container-a">
 			<img class="profile" src="user.jpg">
 			<h2>Mario</h2>
-			<i class="fas fa-plus-circle"></i>
+			<!-- <i class="fas fa-plus-circle"></i> -->
 			<input type="text" name="friends" placeholder="add friends">
 			<h3>Friends</h3>
+			<ul>
+				<li>Waluigi</li>
+				<li>Luigi</li>
+				<li>Wario</li>
+			</ul>
 		</div>
 		<div class="container-b">
 			<div class="game-wrapper">
 				<div class="game">
-					<img class="cover" src="cover.jpg">
+					<div class="card">
+						<img class="cover" src="cover.jpg">
+					</div>	
 				</div>
 				<div class="game">
-					<img class="cover" src="cover.jpg">
+					<div class="card">
+						<img class="cover" src="cover.jpg">
+					</div>	
 				</div>
 				<div class="game">
-					<img class="cover" src="cover.jpg">
+					<div class="card">
+						<img class="cover" src="cover.jpg">
+					</div>	
 				</div>
 				<div class="game">
-					<img class="cover" src="cover.jpg">
+					<div class="card">
+						<img class="cover" src="cover.jpg">
+					</div>	
 				</div>
 				<div class="game">
-					<img class="cover" src="cover.jpg">
+					<div class="card">
+						<img class="cover" src="cover.jpg">
+					</div>	
 				</div>
 				<div class="game">
-					<img class="cover" src="cover.jpg">
+					<div class="card">
+						<img class="cover" src="cover.jpg">
+						<div class="name">Players : 4 , CO-OP</div>
+					</div>	
 				</div>
+
 
 
 
@@ -50,12 +69,19 @@
 	body {
 		font-family: Open Sans
 	}
-	h2 {
-		height: 100px;
-	}
 	@font-face {
     font-family: Lovelo;
     src: url("./lovelo.otf");
+	}
+
+	h4{
+		margin: none;
+	}
+
+	.name {
+		padding-top: 5px;
+		font-size: 20px;
+		padding-left: 10px;
 	}
 
 	.cover {
@@ -72,12 +98,17 @@
 		height: 90%;
 	}
 
+	.card {
+		height: 200px;
+		background-color: white;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+
 	.game {
-		height: 215px;
-		width: 460px;
-		background-color: blue;
-		padding: 30px;
+		height: 160px;
+		width: 340px;
 		margin: auto;
+		padding:20px;
 	}
 
 	.wrapper{
@@ -97,6 +128,7 @@
 	}
 	.container-b {
 		grid-area: b;
+		background-color: #fbfbfb;
 	}
 	.profile {
 		margin-top: 35px;
@@ -111,17 +143,18 @@
 		letter-spacing: 3px;
 	}
 	input {
-		width: 300px;
+		width: 200px;
 		border-radius: 30px;
 		border: none;
 		height: 50px;
 		text-align: center;
-		margin-bottom: 60px;
-		margin-right: 45px;
+/*		margin-bottom: 60px;
+		margin-right: 45px;*/
 	}
 	h3 {
 		color: white;
 		font-size: 30px;
+		margin-bottom: 5px;
 	}
 	i {
 		position: absolute;
@@ -130,5 +163,23 @@
 		font-size: 30px;
 		color: white;
 	}
+
+	ul {
+		color: white;
+		text-align: left;
+		padding-right: 130px;
+		letter-spacing: 2px;
+	}
+
+	li {
+		padding: 5px;
+	}
+
+	@media only screen and (max-width: 1125px) {
+		.game {
+			padding: 40px;
+		}
+}
+
 </style>
 </html>
